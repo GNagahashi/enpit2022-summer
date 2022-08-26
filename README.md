@@ -6,7 +6,7 @@
 2. Rename this repository in the local from `enpit2022_summer` to `gnc`.
 3. Build on Terminal. (e.g. `cd ~/catkin_ws && catkin build`)(Need `iq_sim` and `iq_gnc` packages)
 4. Run in Terminal.
-```
+```sh
 cd ~/Desktop
 ./simulator.sh
 # New tab, after 'cd ~/Desktop'
