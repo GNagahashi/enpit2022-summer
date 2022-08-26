@@ -1,3 +1,28 @@
+# enPiT Summer School 2022
+
+## How to use
+
+1. Clone this repository. (e.g. `cd ~/catkin_ws/src && git clone https://github.com/GNagahashi/enpit2022_summer.git`)
+2. Rename this repository in the local from `enpit2022_summer` to `gnc`. (e.g. `mv enpit2022_summer/ gnc`)
+3. Build on Terminal. (e.g. `cd ~/catkin_ws && catkin build`)(Need `iq_sim` and `iq_gnc` packages)
+4. Run in Terminal.
+```sh
+cd ~/Desktop
+./simulator.sh
+# New tab, after 'cd ~/Desktop'
+./sitl.sh
+# New window, after 'source ~/.bashrc && source <your work space>/devel/setup.bash'
+roscore
+# New tab
+roslaunch iq_sim apm.launch
+# New tab
+rosrun gnc ctrl
+```
+
+  
+-----
+  
+
 # gnc: An example project of BridgePoint for controlling quad copter for APRIS Robot Challange
 
 ## How to run
