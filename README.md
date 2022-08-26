@@ -19,9 +19,9 @@ roslaunch iq_sim apm.launch
 rosrun gnc ctrl
 ```
 
-
+  
 -----
-
+  
 
 # gnc: An example project of BridgePoint for controlling quad copter for APRIS Robot Challange
 
