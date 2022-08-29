@@ -4,8 +4,8 @@
 
 1. Clone this repository. (e.g. `cd ~/catkin_ws/src && git clone https://github.com/GNagahashi/enpit2022_summer.git`)
 2. Rename this repository in the local from `enpit2022_summer` to `gnc`. (e.g. `mv enpit2022_summer/ gnc`)
-3. Build on Terminal. (e.g. `cd ~/catkin_ws && catkin build`)(Need `iq_sim` and `iq_gnc` packages)
-4. Run in Terminal.
+3. Build on BridgePoint.
+4. Run in Terminal. (Need `iq_sim` and `iq_gnc` packages)
 ```sh
 cd ~/Desktop
 ./simulator.sh
