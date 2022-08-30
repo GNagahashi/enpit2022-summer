@@ -2,8 +2,20 @@
 
 ## How to use
 
-1. Clone this repository. (e.g. `cd ~/catkin_ws/src && git clone https://github.com/GNagahashi/enpit2022_summer.git`)
-2. Rename this repository in the local from `enpit2022_summer` to `gnc`. (e.g. `mv enpit2022_summer/ gnc`)
+1. Clone this repository.
+```sh
+# e.g.
+cd ~/catkin_ws/src
+git clone https://github.com/GNagahashi/enpit2022_summer.git
+```
+
+2. Rename this repository in the local from `enpit2022_summer` to `gnc`.
+```sh
+# e.g.
+cd ~/catkin_ws/src
+mv enpit2022_summer/ gnc
+```
+
 3. Build on BridgePoint.
 4. Run in Terminal. (Need `iq_sim` and `iq_gnc` packages)
 ```sh
@@ -19,9 +31,16 @@ roslaunch iq_sim apm.launch
 rosrun gnc ctrl
 ```
 
-  
+5. Let's control a drone  
+If you want to control a drone, please send a message to `/gnc_drone/cmd` topic(Use `std_msgs/String`)  
+Message variation: start, halt, grab, forward, backward, left, right    
+OR, use this package: https://github.com/GNagahashi/enpit2022_summer_drone_ctrl.git  
+
+Lastly, please also read the following text.
+
+
 -----
-  
+
 
 # gnc: An example project of BridgePoint for controlling quad copter for APRIS Robot Challange
 
