@@ -21,6 +21,7 @@ rosrun gnc ctrl
 
   
 -----
+Please also read the following text
   
 
 # gnc: An example project of BridgePoint for controlling quad copter for APRIS Robot Challange
