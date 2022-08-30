@@ -184,6 +184,24 @@ INSERT INTO PE_PE
 	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
 	"00000000-0000-0000-0000-000000000000",
 	1);
+INSERT INTO S_SYNC
+	VALUES ("9e2d3ce5-bd31-476d-8f26-c366b53e7ddb",
+	"00000000-0000-0000-0000-000000000000",
+	'stop',
+	'',
+	'// this function define: src/Control.c/Control_stop()
+select any ctrl from instances of Controller;
+generate Controller9:''stop'' to ctrl;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("9e2d3ce5-bd31-476d-8f26-c366b53e7ddb",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
 INSERT INTO PE_PE
 	VALUES ("c266a8d5-aa61-43f4-9d01-7e2baedb603e",
 	1,

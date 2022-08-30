@@ -502,6 +502,10 @@ void command_cb(const std_msgs::String::ConstPtr& msg){
 			ROS_INFO("recv: grab");
 			Control_grab();
 	}
+	else if(msg->data == "stop"){
+				ROS_INFO("recv: stop");
+				Control_stop();
+	}
 	else{
 		ROS_INFO("recv: %s", msg->data.c_str());
 	}
