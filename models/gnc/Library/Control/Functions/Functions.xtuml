@@ -46,7 +46,8 @@ position.x = 0;
 position.y = 0;
 position.z = 0;
 relate ctrl to position across R1.''now position'';
-',
+
+generate Controller1:''start'' to ctrl;',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
@@ -173,7 +174,7 @@ INSERT INTO S_SYNC
 	'',
 	'// this function define: src/Control.c/Control_forward()
 select any ctrl from instances of Controller;
-generate Controller10:''grab'' to ctrl;  // // raise start event, drone will grab a prize',
+generate Controller8:''grab'' to ctrl;  // // raise start event, drone will grab a prize',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
@@ -191,7 +192,7 @@ INSERT INTO S_SYNC
 	'',
 	'// this function define: src/Control.c/Control_stop()
 select any ctrl from instances of Controller;
-generate Controller9:''stop'' to ctrl;',
+generate Controller10:''stop'' to ctrl;',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
