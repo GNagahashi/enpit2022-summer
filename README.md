@@ -29,7 +29,6 @@ roscore
 roslaunch iq_sim apm.launch
 # New tab
 rosrun gnc ctrl
-# 
 ```
 
 5. Let's control a drone  
