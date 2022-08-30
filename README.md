@@ -2,7 +2,7 @@
 
 ## How to use
 
-1. Clone this repository. (e.g. `cd ~/catkin_ws/src && git clone https://github.com/GNagahashi/enpit2022_summer.git`)
+1. Clone this repository.
 ```sh
 # e.g.
 cd ~/catkin_ws/src
