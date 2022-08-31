@@ -1713,7 +1713,7 @@ now_position.z = 0.25;
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 
 // count time[us]
-set_time = 3000000;  //1000000
+set_time = 3000000;
 // create "wait_grab" event (timer event)
 create event instance wait_grab of Controller9:''go_home'' to self;
 // set timer event
@@ -2038,7 +2038,7 @@ now_position.z = 1;
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 
 // count time[us]
-set_time = 3000000;  //1000000
+set_time = 3000000;
 // create "wait_grab" event (timer event)
 create event instance wait_grab of Controller9:''go_home'' to self;
 // set timer event
