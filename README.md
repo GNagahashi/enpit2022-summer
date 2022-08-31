@@ -36,8 +36,12 @@ rosrun gnc ctrl
 
 5, Let's control a drone.  
 
-If you want to control a drone, please send a message to `/gnc_drone/cmd` topic(Use `std_msgs/String`)  
-Message variation: start, halt, grab, forward, backward, left, right  
+If you want to control a drone, please send a message to `/gnc_drone/cmd` topic. (Use `std_msgs/String`)  
+Message variation: `start`, `halt`, `grab`, `forward`, `backward`, `left`, `right`
+```sh
+# e.g.
+rostopic pub /gnc_node/cmd std_msgs/msg/String "data: 'start'"
+```
 
 OR, use this package: https://github.com/GNagahashi/enpit2022_summer_drone_ctrl.git  
 
