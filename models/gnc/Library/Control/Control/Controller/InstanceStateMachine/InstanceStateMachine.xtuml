@@ -1753,6 +1753,8 @@ INSERT INTO SM_ACT
 	1,
 	'Port1::land();
 Port1::set_heading( heading:0 );
+
+generate Controller2:''ready'' to self;
 ',
 	'',
 	0);
