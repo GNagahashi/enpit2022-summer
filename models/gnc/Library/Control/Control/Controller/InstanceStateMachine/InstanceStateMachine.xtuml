@@ -1620,8 +1620,8 @@ INSERT INTO SM_ACT
 	VALUES ("cf551de6-2f95-4baf-a81c-cd1c0da88095",
 	"c0c74364-95af-42df-a665-9e2fd1a7f507",
 	1,
-	'Port1::takeoff( alt:1 );
-Port1::set_destination( x:0, y:0, z:1 );
+	'Port1::takeoff( alt:2 );  // Port1::takeoff( alt:1 );
+Port1::set_destination( x:0, y:0, z:2 );  // z:1
 Port1::set_heading( heading:0 );
 ',
 	'',
@@ -1639,7 +1639,7 @@ INSERT INTO SM_ACT
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
 now_position.y = now_position.y + 0.1;
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 ',
 	'',
@@ -1657,7 +1657,7 @@ INSERT INTO SM_ACT
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
 now_position.y = now_position.y - 0.1;
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );',
 	'',
 	0);
@@ -1674,7 +1674,7 @@ INSERT INTO SM_ACT
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
 now_position.x = now_position.x - 0.1;
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 ',
 	'',
@@ -1692,7 +1692,7 @@ INSERT INTO SM_ACT
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
 now_position.x = now_position.x + 0.1;
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 ',
 	'',
@@ -1709,7 +1709,7 @@ INSERT INTO SM_ACT
 	"c0c74364-95af-42df-a665-9e2fd1a7f507",
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
-now_position.z = 0.25;
+now_position.z = 1;  // 0.25
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 
 // count time[us]
@@ -1735,7 +1735,7 @@ INSERT INTO SM_ACT
 	'select one now_position related by self->Position[R1.''now position''];
 now_position.x = 0;
 now_position.y = 0;
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 ',
 	'',
@@ -2036,7 +2036,7 @@ INSERT INTO SM_ACT
 	"c0c74364-95af-42df-a665-9e2fd1a7f507",
 	1,
 	'select one now_position related by self->Position[R1.''now position''];
-now_position.z = 1;
+now_position.z = 2;  // 1
 Port1::set_destination( x:now_position.x, y:now_position.y, z:now_position.z );
 
 // count time[us]
