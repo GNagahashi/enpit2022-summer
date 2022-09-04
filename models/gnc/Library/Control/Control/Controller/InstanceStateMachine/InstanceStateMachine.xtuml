@@ -1620,9 +1620,11 @@ INSERT INTO SM_ACT
 	VALUES ("cf551de6-2f95-4baf-a81c-cd1c0da88095",
 	"c0c74364-95af-42df-a665-9e2fd1a7f507",
 	1,
-	'Port1::takeoff( alt:2 );  // Port1::takeoff( alt:1 );
-Port1::set_destination( x:0, y:0, z:2 );  // z:1
+	'Port1::takeoff( alt:2 );
+Port1::set_destination( x:0, y:0, z:2 );
 Port1::set_heading( heading:0 );
+
+generate Controller2:''ready'' to self;
 ',
 	'',
 	0);
